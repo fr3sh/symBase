@@ -6,7 +6,7 @@ Base project for symfony 3 app
 What's inside?
 --------------
 
-  * [**FOSUSERBUNDLE**][1] - login plugin
+  * [**FOSUSERBUNDLE**][1] - login plugin 
 
 
 [1]:  https://github.com/FriendsOfSymfony/FOSUserBundle
