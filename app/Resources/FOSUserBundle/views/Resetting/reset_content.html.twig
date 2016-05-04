@@ -1,0 +1,38 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+    {{ form_widget(form) }}
+    
+    
+      <div id="legend">
+      <legend class="">Reset Hasła</legend>
+    </div>
+      
+   
+{#       <div class="form-group row">
+      <!-- Username -->
+      {{ form_label(form.username, null,{'label_attr': {'class': ' col-sm-2 form-control-label' , 'for':'fos_user_profile_form_current_password'}}) }}
+      <div class="col-sm-5">
+         {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+          {{ form_errors(form.username) }}
+        <p class="help-block">Nazwa użytkownika nie może mieć spacji.</p>
+      </div>
+    </div>#}
+    
+    
+        
+            <div class="form-group row">
+      <!-- Button -->
+      <div class="col-sm-5">
+              
+   
+        <input class="btn btn-success" type="submit" value="{{ 'resetting.reset.submit'|trans }}"  />
+      </div>
+    </div>
+    
+        
+
+{{ form_end(form) }}
+
+
+{{dump()}}

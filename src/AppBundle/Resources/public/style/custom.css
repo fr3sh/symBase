@@ -1,0 +1,221 @@
+.nav > li > div {
+    color: white;
+    padding-top: 15px;
+}
+
+.p-left-5 { padding-left: 5px; }
+.p-left-10 { padding-left: 10px; }
+.p-left-15 { padding-left: 15px; }
+.p-left-25 { padding-left: 25px; }
+.p-left-35 { padding-left: 35px; }
+.p-left-45 { padding-left: 45px; }
+
+.p-right-5 { padding-right: 5px; }
+.p-right-10 { padding-right: 10px; }
+.p-right-15 { padding-right: 15px; }
+.p-right-25 { padding-right: 25px; }
+.p-right-35 { padding-right: 35px; }
+.p-right-45 { padding-right: 45px; }
+
+.p-bottom-20 { padding-bottom: 20px; }
+
+.p-top-3 { padding-top: 3px; }
+.p-top-5 { padding-top: 5px; }
+.p-top-10 { padding-top: 10px; }
+.p-top-20 { padding-top: 20px; }
+
+
+.m-right-5 { margin-right: 5px; }
+.m-right-10 { margin-right: 10px; }
+.m-right-15 { margin-right: 15px; }
+.m-right-25 { margin-right: 25px; }
+.m-right-35 { margin-right: 35px; }
+.m-right-45 { margin-right: 45px; }
+
+.m-top-10 { margin-top: 10px; }
+.m-top-15 { margin-top: 15px; }
+.m-top-20 { margin-top: 20px; }
+.m-top-40 { margin-top: 40px; }
+.m-top-60 { margin-top: 60px; }
+.m-top-80 { margin-top: 80px; }
+
+.m-bottom-10 { margin-bottom: 10px; }
+.m-bottom-15 { margin-bottom: 15px; }
+.m-bottom-20 { margin-bottom: 20px; }
+
+.color-white {
+	color: #fff;
+}
+
+.fa-2x {
+  font-size: 2em !important;}
+.fa-3x {
+  font-size: 3em !important;}
+.fa-4x {
+  font-size: 4em !important;}
+.fa-5x {
+  font-size: 5em !important;}
+  
+.form-control {
+	border: 1px solid #999;
+}
+.input-group .input-group-addon {
+	border-color: #999;
+}
+
+.has-error .form-control {
+	border-color: #a94442;
+}
+.has-error .input-group-addon {
+	border-color: #a94442;
+}
+
+.form-bordered .form-group {
+    border-top: 1px solid #d3d7db;
+    margin: 0;
+    padding: 10px 0 6px 0;
+}
+
+.select2-search input {
+	border: 1px solid #cccccc;
+}
+.form-control .select2-choice {
+	border: 1px solid #999999;
+}
+.hidden {
+     display:none;
+}
+
+
+table.dataTable.no-footer {
+	border-bottom:0;
+}
+
+.color_red {
+	color: #f3565d;
+}
+
+.color_grey {
+	color: #ccc;
+}
+
+a.color_text_site {
+	color: #333333;
+}
+
+a.color_black {
+	color: #333;
+}
+
+a.color_black:hover {
+	color: #333;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+a.color_red {
+	color: #f3565d;
+}
+
+.select2-container-multi .select2-choices {
+	border: 1px solid #999;
+}
+
+
+.sidecontentpullout {
+    background-color: #428bca;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    color: White;
+    padding: 4px 3px;
+}
+.sidecontentpullout:hover {
+    background-color: #86a5bc;
+    color: White;
+}
+.sidecontent {
+    background-color: #86a5bc;
+    border-bottom-left-radius: 1em;
+    color: White;
+}
+.sidecontent > div > div {
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.pdfB {
+    
+    
+}
+.pdfB > span {
+     background: url(/one/web/img/icons/pdf.png) no-repeat bottom left;
+      background-size: 24px 24px;
+    color: black;
+    padding-left: 27px;
+     padding-top: 10px;
+    
+}
+
+.csvB > span {
+     background: url(/one/web/img/icons/csv.png) no-repeat bottom left;
+      background-size: 24px 24px;
+    color: black;
+    padding-left: 27px;
+     padding-top: 10px;
+    
+}
+
+.exelB > span {
+     background: url(/one/web/img/icons/xls.png) no-repeat bottom left;
+      background-size: 24px 24px;
+    color: black;
+    padding-left: 27px;
+     padding-top: 10px;
+    
+}
+
+
+.dropdown-menu > li > div > a {
+   
+    
+ clear: both;
+    color: #333;
+    display: block;
+    font-weight: 400;
+    line-height: 1.42857;
+    padding: 9px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.dropdown-menu > li > div > a:focus, .dropdown-menu > li > div > a:hover {
+    background-color: #f5f5f5;
+    color: #262626;
+    text-decoration: none;
+}
+
+.captcha > table {
+    border-collapse:separate;
+    border:solid #6f0400 1px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+	background-color:#870500;
+	 border-spacing: 5px;
+}
+
+.captcha > th, td {
+	
+
+	/* border:solid blue 1px; */
+	border-radius:4px;
+	padding: 4px;
+    text-align: left;
+
+}
+
+.CaptchaTextInput {
+background-color:#ffdc73;
+}
+.CaptchaImage {
+background-color:#FFFFFF;
+}

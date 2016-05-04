@@ -1,0 +1,45 @@
+{% block captcha_widget %}
+    {% if is_human %}
+        -
+    {% else %}
+        {% spaceless %}
+            <div class="captcha">
+                <table>
+                    <tr>
+
+                        <td class="CaptchaImage" colspan="2"> <img id="{{ image_id }}" src="{{ captcha_code }}" alt="" title="captcha" width="{{ captcha_width }}" height="{{ captcha_height }}" /></td>   
+                    </tr>
+
+
+
+                    <tr>
+                        <td class="CaptchaTextInput"> {{ form_widget(form) }} </td>
+                        <td>
+                            {% if reload %}
+                                <script type="text/javascript">
+                                    function reload_{{ image_id }}() {
+                                        var img = document.getElementById('{{ image_id }}');
+                                        img.src = '{{ captcha_code }}?n=' + (new Date()).getTime();
+                                    }
+                                </script>
+
+
+                                <a class="captcha_reload" href="javascript:reload_{{ image_id }}();"><img width="24px" src="{{ asset('bundles/app/img/icons/reload.png') }}">{#{{ 'Renew'|trans({}, 'gregwar_captcha') }}#}</a>
+
+                            {% endif %}
+
+                        </td> 
+                    </tr>
+                    <tr>
+                     <td colspan="2"> 
+                        
+                      {{ form_errors(form) }}
+                           </td> 
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    {% endspaceless %}
+{% endif %}
+{% endblock %}
