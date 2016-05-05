@@ -6,7 +6,7 @@ parameters:
     database_user: root
     database_password: root
     mailer_transport: smtp
-    mailer_host: aaa.nazwa.pl
+    mailer_host: fr3sh.nazwa.pl
     mailer_user: aaaa@000.nazwa.pl
     mailer_password: 0000000
     secret: 000000000000
