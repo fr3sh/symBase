@@ -13,7 +13,11 @@ What's inside?
 --------------
 
   * [**FOSUSERBUNDLE**][1] - login plugin
+  * [**JMSI18nRoutingBundle **][2] - routing bundle. Translations site
+  * [**CAPTCHA **][2] - Captcha
 
 
 [1]:  https://github.com/FriendsOfSymfony/FOSUserBundle
+[2]:  http://jmsyst.com/bundles/JMSI18nRoutingBundle
+[3]:  https://github.com/Gregwar/CaptchaBundle
 
