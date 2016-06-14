@@ -20,7 +20,9 @@ $(document)
                      */
 
 
-
+$(".langChange").select2({
+  templateResult: formatState
+});
 
                 });
                 
@@ -346,3 +348,14 @@ function sendHtmlTable2(path, html) {
     window.location.href = path + "/alamakota";
 
 }
+
+
+
+function formatState (state) {
+  if (!state.id) { return state.text; }
+  var $state = $(
+    '<span><img src="public/img/icons/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+  );
+  return $state;
+};
+
