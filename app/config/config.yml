@@ -86,3 +86,8 @@ fos_user:
 
 gregwar_captcha: ~
 
+jms_i18n_routing:
+    default_locale: "%locale%"
+    locales: [pl, de, en]
+    strategy: prefix_except_default
+

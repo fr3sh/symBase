@@ -14,19 +14,7 @@ class RegistrationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('imie')
-                ->add('nazwisko')
-                ->add('firma')
-                ->add('nip')
-                ->add('ulica')
-                ->add('nrdomu')
-                ->add('nrmieszkania')
-        ->add('kod')
-        ->add('miasto')
-        ->add('nrtelefonu')
-        ->add('abonament')
-        
-        ->add('captcha', CaptchaType::class, array(
+$builder->add('captcha', CaptchaType::class, array(
         'width' => 200,
         'reload' => true,
         'as_url' => true,
