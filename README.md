@@ -20,11 +20,13 @@ What's inside?
 
 TO DO?
 --------------
-Expose assets in js https://github.com/jmikola/JmikolaJsAssetsHelperBundle/
 
+TO REPAIR?
+--------------
+jsrouting-bundle does not work. No routes exposed after command php bin/console fos:js-routing:debug. 
 
 [1]:  https://github.com/FriendsOfSymfony/FOSUserBundle
 [2]:  http://jmsyst.com/bundles/JMSI18nRoutingBundle
 [3]:  https://github.com/Gregwar/CaptchaBundle
-[4]:  friendsofsymfony/jsrouting-bundle
+
 

@@ -21,10 +21,44 @@ $(document)
 
 
 $(".langChange").select2({
-  templateResult: formatState
-});
+  templateResult: formatState,
+  matcher: customMatcher
+})        .on("change", function(e) {
+          // mostly used event, fired to the original element when the value changes
+         // alert ("dd");
+       //  var g = $(this).val();
+         var pathToGo = $(".langChange").select2().find(":selected").data("path");
+         window.location = pathToGo;
+        // var pathToGo = $(this).data('path');
+        // var d = e.data('path');
+         //var t = Routing.generate('register', { _locale: $(this).val() });
+        // var s = "";
+        });
+
+
 
                 });
+                
+  function customMatcher(params, data) {
+    // Always return the object if there is nothing to compare
+    if ($.trim(params.term) === '') {
+        return data;
+    }
+
+    // Check if the text contains the term
+    if (data.text.indexOf(params.term) > -1) {
+        return data;
+    }
+
+    // Check if the data occurs
+    if ($(data.element).data('nazwa').toString().toUpperCase().indexOf(params.term.toUpperCase()) > -1) {
+        return data;
+    }
+
+    // If it doesn't contain the term, don't return anything
+    return null;
+}              
+                
                 
  function getCSSHrefs(allhtml) {
     var Boddy = allhtml.match(/<head[^>]*>([\w|\W]*)<\/head>/g);
@@ -354,7 +388,7 @@ function sendHtmlTable2(path, html) {
 function formatState (state) {
   if (!state.id) { return state.text; }
   var $state = $(
-    '<span><img src="public/img/icons/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+    '<div style="text-align: center"><img  src="'+ assetsBaseDir + '/icons/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</div>'
   );
   return $state;
 };

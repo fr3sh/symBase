@@ -21,7 +21,7 @@
             <link rel="stylesheet" href="{{ asset('bundles/app/other/font-awesome-4.4.0/css/font-awesome.min.css') }}">
 
             <link href="{{ asset('bundles/app/style/FOSstyle.css') }}" rel="stylesheet">
-             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
             {% endstylesheets  %}
 
         {% endblock %}
@@ -76,11 +76,13 @@
             <script type="text/javascript" src="{{ asset('bundles/app/other/tableExport.jquery.plugin-master2/libs/html2canvas/html2canvas.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('bundles/app/other/tableExport.jquery.plugin-master2/tableExport.min.js') }}"></script>
 
+            <!-- Scieka do assetw dla JS  -->
+            <script>
+                var assetsBaseDir = "{{ asset('bundles/app/img/') }}"
+            </script>
 
-
-
-
-
+            <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+            <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
             <!-- Skrypty niezbedne do EXPORTU TABEL PDF ITD  -->
 
         {% endblock %}
@@ -89,7 +91,7 @@
     </head>
 
     <body>
-{% trans_default_domain 'FOSUserBundle' %}
+        {% trans_default_domain 'FOSUserBundle' %}
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -177,11 +179,22 @@
                             <li>        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
                             <li><a href="#about">Rejsetracja</a></li>
                             {% endif %}
-<li>
-                        <select class="langChange">
-                            <option value="pl">Poland</option>
-                        </select>
-                       </li>     
+                        <li>
+                            <div>
+                            <select class="langChange" style="width: 120px">
+                                {% if app.request.attributes.get('_route') == 'homepage' %}   
+                                <option data-path="{{ path("homepage", {"_locale": "pl"}) }}" data-nazwa='Poland' value="pl"></option>
+                                <option data-path="{{ path("homepage", {"_locale": "en"}) }}" data-nazwa='England'value="en"></option>
+                                <option data-path="{{ path("homepage", {"_locale": "de"}) }}" data-nazwa='Germany' value="de"></option>
+                                {#<option data-path="{{ path("homepage", {"_locale": "de"}) }}" data-nazwa='Germany' value="de">Germany</option>#}
+                                 {% else %}
+                                <option data-path="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'pl'})) }}" data-nazwa='Poland' value="pl"></option>
+                                <option data-path="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}" data-nazwa='England' value="en"></option>
+                                <option data-path="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'de'})) }}" data-nazwa='Germany' value="de">Germany</option>
+                                      {% endif %}
+                            </select>
+                               </div>
+                        </li>     
                         {% if app.request.attributes.get('_route') == 'homepage' %}      
                             <li><a href="{{ path("homepage", {"_locale": "pl"}) }}"><img width="22px" src="  {{ asset('bundles/app/img/icons/pl.png') }}"></a></li>
 
