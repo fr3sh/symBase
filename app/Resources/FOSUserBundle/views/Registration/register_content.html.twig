@@ -29,7 +29,7 @@
       <div class="col-sm-5">
          {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
           {{ form_errors(form.username) }}
-        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+        <p class="help-block">{{ 'registration.helpBlock.username'|trans }}</p>
       </div>
     </div>
       
@@ -40,7 +40,7 @@
       <div class="col-sm-5">
         {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
          {{ form_errors(form.email) }}
-        <p class="help-block">Please provide your E-mail</p>
+        <p class="help-block">{{ 'registration.helpBlock.email'|trans }}</p>
       </div>
     </div>
 {#<ol>
@@ -55,7 +55,7 @@
       <div class="col-sm-5">
         {{ form_widget(form.plainPassword.first, {'attr': {'class': 'form-control'}}) }}
          {{ form_errors(form.plainPassword.first) }}
-        <p class="help-block">Password should be at least 4 characters</p>
+        <p class="help-block">{{ 'registration.helpBlock.pass'|trans }}</p>
       </div>
     </div>
         
@@ -65,7 +65,7 @@
       <div class="col-sm-5">
         {{ form_widget(form.plainPassword.second, {'attr': {'class': 'form-control'}}) }}
          {{ form_errors(form.plainPassword.second) }}
-        <p class="help-block">Password should be at least 4 characters</p>
+        <p class="help-block">{{ 'registration.helpBlock.pass2'|trans }}</p>
       </div>
     </div>
         

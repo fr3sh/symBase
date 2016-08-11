@@ -102,25 +102,10 @@ class User extends BaseUser {
      */
     protected $regon;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     *
-     * @Assert\NotBlank(message="Proszę podać ulicę.", groups={"Registration", "Profile"})
-     * @Assert\Length(
-     *     min=2,
-     *     max=255,
-     *     minMessage="Ulica jest zbyt krótka.",
-     *     maxMessage="Ulica jest zbyt długa.",
-     *     groups={"Registration", "Profile"}
-     * )
-     */
+
     
     
-        /**
-     * @var string
-     *
-     * @ORM\Column(name="regon", type="string", length=20, nullable=true)
-     */
+
         function getId() {
             return $this->id;
         }

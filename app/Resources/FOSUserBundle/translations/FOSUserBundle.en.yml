@@ -38,6 +38,11 @@ registration:
     submit: Register
     flash:
         user_created: 'The user has been created successfully'
+    helpBlock:
+        username: 'Username can contain any letters or numbers, without spaces'
+        email: 'Please provide your E-mail'
+        pass: 'Password should be at least 4 characters'
+        pass2: 'Repeat your password'
     email:
         subject: 'Welcome %username%!'
         message: |

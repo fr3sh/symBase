@@ -35,6 +35,11 @@ registration:
     submit: Zarejestruj
     flash:
         user_created: 'Stworzono użytkownika'
+    helpBlock:
+        username: 'Nazwa użytkownika nie może zawierac spacji'
+        email: 'Proszę wpisz swój adres e-mail'
+        pass: 'Hasło powinno mieć conajmniej cztery znaki'
+        pass2: 'Powtórz hasło'
     email:
         subject: 'Witaj %username%!'
         message: "Cześć %username%!\n\nAby potwierdzić swoje konto - proszę przejść do %confirmationUrl%\n\nPozdrawiamy,\nZespół.\n"

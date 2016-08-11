@@ -34,6 +34,11 @@ registration:
     submit: Registrieren
     flash:
         user_created: 'Der Benutzer wurde erfolgreich erstellt'
+    helpBlock:
+        username: 'XXX'
+        email: 'XXX'
+        pass: 'XXXX'
+        pass2: 'X'
     email:
         subject: 'Willkommen %username%!'
         message: "Hallo %username%!\n\nBesuchen Sie bitte folgende Seite, um Ihr Benutzerkonto zu bestätigen: %confirmationUrl%\n\nMit besten Grüßen,\ndas Team.\n"
