@@ -25,10 +25,14 @@ profile:
     flash:
         updated: 'Zapisano zmiany w profilu'
 change_password:
+    passReset: 'Zapomniałeś hasła?'
     submit: 'Zmień hasło'
     flash:
         success: 'Hasło zostało zmienione'
 registration:
+    registration: 'Rejestracja'
+    text1: 'Jesteś tu nowy?'
+    text2: 'Dołącz do nas!'
     check_email: 'Na adres %email% wysłano wiadomość e-mail. Zawiera ona link, na który należy kliknąć, aby aktywować konto.'
     confirmed: 'Gratulacje %username%, potwierdziłeś konto.'
     back: 'Powrót do poprzedniej strony.'

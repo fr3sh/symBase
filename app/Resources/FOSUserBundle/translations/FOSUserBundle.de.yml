@@ -24,10 +24,14 @@ profile:
     flash:
         updated: 'Das Benutzerprofil wurde aktualisiert'
 change_password:
+    passReset: 'Zapomniałeś hasła?'
     submit: 'Passwort ändern'
     flash:
         success: 'Das Passwort wurde geändert'
 registration:
+    registration: 'Rejestracja'
+    text1: 'Jesteś nowy?'
+    text2: 'Join Us'
     check_email: 'Eine E-Mail wurde an %email% gesendet. Sie enthält einen Link, den Sie anklicken müssen, um Ihr Benutzerkonto zu bestätigen.'
     confirmed: 'Glückwunsch %username%, Ihr Benutzerkonto ist jetzt bestätigt.'
     back: 'Zurück zur ursprünglichen Seite.'

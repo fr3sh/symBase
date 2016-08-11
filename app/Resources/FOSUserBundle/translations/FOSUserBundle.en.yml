@@ -27,11 +27,15 @@ profile:
         updated: 'The profile has been updated'
 
 change_password:
+    passReset: 'Zapomniałeś hasła?'
     submit: 'Change password'
     flash:
         success: 'The password has been changed'
 
 registration:
+    registration: 'Registration'
+    text1: 'New here ?'
+    text2: 'Join Us'
     check_email: 'An email has been sent to %email%. It contains an activation link you must click to activate your account.'
     confirmed: 'Congrats %username%, your account is now activated.'
     back: 'Back to the originating page.'
