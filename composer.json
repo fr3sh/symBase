@@ -25,7 +25,9 @@
         "friendsofsymfony/user-bundle": "dev-master",
         "gregwar/captcha-bundle": "* dev-master",
         "jms/i18n-routing-bundle": "2.0.0",
-        "friendsofsymfony/jsrouting-bundle": "2.0.x-dev"
+        "friendsofsymfony/jsrouting-bundle": "2.0.x-dev",
+        "doctrine/data-fixtures": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
