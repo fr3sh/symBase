@@ -286,7 +286,7 @@ defaultOptions.ui.scores = [14, 26, 38, 50];
 
 
 
-
+ $t=0;
 var ui = {};
 
 (function ($, ui) {
@@ -337,8 +337,11 @@ var ui = {};
         options.instances.viewports = result;
         return result;
     };
-
+    
+   
     ui.initProgressBar = function (options, $el) {
+        if ($t==0){
+            $t=1;
         var $container = ui.getContainer(options, $el),
             progressbar = "<div class='progress'><div class='";
 
@@ -356,6 +359,7 @@ var ui = {};
         } else {
             $(progressbar).insertAfter($el);
         }
+    }
     };
 
     ui.initHelper = function (options, $el, html, viewport) {

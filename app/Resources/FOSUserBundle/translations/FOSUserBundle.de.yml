@@ -32,6 +32,8 @@ registration:
     registration: 'Rejestracja'
     text1: 'Jesteś nowy?'
     text2: 'Join Us'
+    text3: 'Utwórz nowe konto'
+    text4: 'zresetuj hasło'
     check_email: 'Eine E-Mail wurde an %email% gesendet. Sie enthält einen Link, den Sie anklicken müssen, um Ihr Benutzerkonto zu bestätigen.'
     confirmed: 'Glückwunsch %username%, Ihr Benutzerkonto ist jetzt bestätigt.'
     back: 'Zurück zur ursprünglichen Seite.'
@@ -90,3 +92,5 @@ main_site:
     main_site_text: 'Hauptseite'
     we_are_text: 'Über uns'
     kontakt_text: 'Kontakt'
+common:
+    lub: 'an'

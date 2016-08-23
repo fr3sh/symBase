@@ -35,7 +35,10 @@
                         <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label> 
                     </div>
                     <div>
-                        <a href="#">Create account</a> or <a href="#">reset password</a>
+                        <a href="{{ path('fos_user_registration_register') }}">{{ 'registration.text3'|trans({}, 'FOSUserBundle') }}</a> 
+                        {{ 'common.lub'|trans({}, 'FOSUserBundle') }} 
+                        <a href="{{ path('fos_user_registration_register') }}">{{ 'registration.text4'|trans({}, 'FOSUserBundle') }}</a>
+                    
                     </div>
 
                 </form>

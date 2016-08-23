@@ -33,6 +33,8 @@ registration:
     registration: 'Rejestracja'
     text1: 'Jesteś tu nowy?'
     text2: 'Dołącz do nas!'
+    text3: 'Utwórz nowe konto'
+    text4: 'zresetuj hasło'
     check_email: 'Na adres %email% wysłano wiadomość e-mail. Zawiera ona link, na który należy kliknąć, aby aktywować konto.'
     confirmed: 'Gratulacje %username%, potwierdziłeś konto.'
     back: 'Powrót do poprzedniej strony.'
@@ -91,3 +93,5 @@ main_site:
     main_site_text: 'Strona Główna'
     we_are_text: 'O nas'
     kontakt_text: 'Kontakt'
+common:
+    lub: 'lub'

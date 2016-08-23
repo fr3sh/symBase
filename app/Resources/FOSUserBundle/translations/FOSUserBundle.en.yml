@@ -36,6 +36,8 @@ registration:
     registration: 'Registration'
     text1: 'New here ?'
     text2: 'Join Us'
+    text3: 'Create account'
+    text4: 'reset password'
     check_email: 'An email has been sent to %email%. It contains an activation link you must click to activate your account.'
     confirmed: 'Congrats %username%, your account is now activated.'
     back: 'Back to the originating page.'
@@ -109,3 +111,5 @@ main_site:
     main_site_text: 'Main Site'
     we_are_text: 'O nas'
     kontakt_text: 'Kontakt'
+common:
+    lub: 'or'
