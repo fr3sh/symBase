@@ -19,6 +19,8 @@ What's inside?
 
 
 TO DO?
+cos nie działa ruting prd dla resetu hasła sprawdzić 
+pamietac że na dev nie wysle maila
 --------------
 
 TO REPAIR?
